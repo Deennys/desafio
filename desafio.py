@@ -30,7 +30,8 @@ def desafio():
         num = pi[n:(n+9)]
         if palindromo(num):
             if primo(num):
-                return print(num, n)
+                return (num, (n-1))
         n+=1
 
-desafio()
+resposta = desafio()
+print(resposta[0], "na posição", resposta[1])
